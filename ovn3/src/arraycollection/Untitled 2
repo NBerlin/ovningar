@@ -1,0 +1,30 @@
+Lösningar övning 3
+
+U 18)
+Fall en klass implementerar ett interface måste det även implementera alla abstrakta metoder och liknande
+från interfacet. Ett interface innehåller även bara publika abstracta metoder. Det här är en rätt shit förklaring
+men så som jag förstod det är det typ som i labb 1 har man shape, så alla subklasser av shape som cirkel etc
+som implementerar shape måste implementera shapes abstrakta funktioner som move. Så ett interface sätter typ
+ett skelett antar jag, alltså grundläggande saker som de alla kommer ha gemensamt även fall de inte ser
+likadana ut eller gör samma saker kommer de ha de här sakerna gemensamt och kunna göra dessa saker. Skriv 
+till mig fall du inte fattar för som sagt rätt shit förklaring.
+
+U 19)
+Så det självklara är att de båda oftast innehåller abstrakta metoder men ett interface kan bara innehålla sånt
+som abstrakta metoder medan en abstrakt klass kan även innehålla konstruktor och liknande. Man kan även
+inte skapa objekt av varken abstrakta klasser eller konstruktorer.
+
+u 20)
+Gjort i Rectangle.java
+
+b)
+1 och 3 är korrekta för resizable är ett interface, och som jag skrev ovan kan man inte skapa objekt
+från konstruktorer.
+
+U 21)
+fixat se Rectangle.java
+
+U 22)
+Fixat se ArrayCollection.java
+
+U 23)
