@@ -1,0 +1,59 @@
+Upgift 1 )
+1,2,4,6 är korrekt. Så varje variabel har en klass, och då kan den 
+bara användas av den klassen eller subklasser till den. Alltså
+kan inte en variabel som är deklarerad till en subklass kalla på den
+ursprungliga klassen.
+
+Upgift 2)
+Info = "Lisa Svensson";
+Info = "Lisa Svensson, D"; <-- Trots att P är person så används Students toString för Lisa skapas som student.
+Info = "Kalle Karlsson, c";
+Info = "Per Holm, Computer science";
+
+Uppgift 3)
+Som jag förstod det beror det på vilken klass som skapas i ref. Alltså fall man skapar en new Student så
+är det Student .p() som används men fall det är Person så används dennes .p();
+
+Uppgift 4)
+1,3,4 är korrekt. 2 försöker deklarera en square med bara en parameter när det krävs 3. Men efter jag har
+läste facit framkom att man inte kan deklarera något abstract till en variabel, så 3 är också fel.
+
+Uppgift 5)
+Vektorn har typen Shape, och försöker kalla på draw funktionen därifrån. Det finns dock ingen. Så jag trodde
+man skulle skapa en ny funktion draw som kallade på subklassens draw. Men tydligen ska man istället deklarera
+public abstract void draw(); och så funkade det.
+Måste kolla upp mer varför det fungerar.
+
+Uppgift 6)
+a)
+När något är Static är det bundet till klassen och inte ett objekt. Detta är på grund av att det är
+pensionsåldern enligt lag så den behöver inte ändras för individuella objekt. setSeniorAge och getSeniorAge 
+hade inte behövts deklarera som statiska, men när en metod kan deklareras som det ska man göra det.
+
+b)
+Båda är korrekta dock skulle den första föredras för då använder man sig av klassnamnet för att komma åt
+attributen istället för ett klassobjekt.
+
+c)
+"65"
+
+Uppgift 7)
+"2" För när en parameter förs över till en funktion så kopieras den, så orginalet ändras inte.
+
+Upgift 8)
+"Lisa" Samma sak som ovanför, den som ändras är en kopia. Originalet är  fortfarande sig likt.
+
+Upgift 9)
+Denna gång blir det "Kalle". För här kallas setname på objektet kopian referar till. Så den här gången
+ändras orginalet.
+
+Uppgift 10)
+Den här är jag lite iffy på men det blir 10, som jag förstår det är det även en kopia som skapas här
+men kopian refererar fortfarande till originalet och när referensen för index 3 ändras så ändras även originalet
+
+
+Uppgift 11)
+Båda metoders mål är samma, att vända vektorerna. Men jag tror att felet här är att man bara försöker sätta
+a=temp i första, för den här är ju kopian. Så man ändrar inte själva referenserna. Men i den andra så gör man
+istället a[i]=temp[i] och då ändras även originalets referenser och då vänds den korrekt
+

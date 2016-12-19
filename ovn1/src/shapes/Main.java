@@ -9,7 +9,7 @@ public class Main {
 		theShapes[3] = new Square(450, 450, 50);
 		theShapes[4] = new Circle(200, 200, 35);
 		for (int i = 0; i < theShapes.length; i++) {
-			theShapes[i].move(10, 10);
+			theShapes[i].draw();
 		}
 	}
 }
