@@ -24,6 +24,12 @@ från konstruktorer.
 U 21)
 fixat se Rectangle.java
 
+b) try{
+	r.downSize(n);
+}
+catch(illegalArgumentException e){
+System.out.println(e.getMessage());}
+
 U 22)
 Fixat se ArrayCollection.java
 
