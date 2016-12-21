@@ -1,0 +1,45 @@
+U 41 ) Det viktigaste för en kö är att kunna lägga till ett nytt föremål sist, se fall kön är tom och 
+ta bort ett föremål som är först och returnerna det.
+
+U 42 )
+Stack är som typ omvänd kö. En kö är first in first serve men en stack är last in first serve. Alltså är de
+viktigaste funktionerna att lägga till ett nytt föremål överst på stacken, ta bort och returnera det översta
+föremålet, returnera det översta föremålet utan att ta bort det och se fall högen är tom.
+
+U 43 ) 
+Att delegera till linkedlist skulle innebära att man under Stack<E>(){
+	private LinkedList<E> stacken; 
+}
+och sedan implementerar alla stackfunktioner genom att anropa listan.
+
+
+Att delegera till en array skulle innebära att skapa en array i Stack klassen och en int som håller reda på 
+position. Sedan införa operationer som införde respektive tog bort element från stacken. Denna borde vara 
+vara enkel.
+
+Förstod inte riktigt den om hur man ska göra med enkellänkad lista så här är facits svar
+Att använda en enkellänkad lista innebär att vi gör som i SingleLinkedList, d.v.s.
+vi inför en (nästlad) klass som representerar noder i listan och implementerar sedan
+stackoperationerna p.s.s. som operationerna addFirst() och removeFirst()
+
+
+U44)
+Fördelen är att vi får en färdig och testad klass men nackdelen är att det finns massa operationer som inte
+är alls användbara när man har en stack som även kan förstöra vår stack.
+
+U 45)
+Är inte detta bara att lägga till allt från Queue till Stack med Queues Poll och Stacks push. Då kommer man 
+ta objektet som las till i Queue för längst sen och lägger den först i Stacken, och när det läggs på flera 
+föremål så är alltså den platsen sist. 
+
+Fall min stack är m och min queue är q skulle jag skriva något sånt här
+
+While(!q.isEmpty()){
+	m.push(q.poll());
+}
+ 
+ Bara det borde räcka fall jag har förstått det rätt.
+ 
+ U 46)
+ 
+

@@ -11,12 +11,15 @@ public class Dequeue<E> {
 	
 	/** Inserts the specified element at the beginning of this dequeue. */
 	public void addFirst(E x) {
-		// Fyll i egen kod här
+		first.next=(Node<E>) x;
+		first=(Node<E>) x;
 	}	
 	 
 	 /** Inserts the specified element at the end of this dequeue. */
 	public void addLast(E x) {
-		// Fyll i egen kod här
+		Node<E> temp= (Node<E>) x;
+		temp.next=last;
+		last=temp;
 	}
 	
 	/** Removes and returns the first element in this dequeue. 
