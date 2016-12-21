@@ -34,3 +34,29 @@ U 22)
 Fixat se ArrayCollection.java
 
 U 23)
+Inte gjort än
+
+U 24)
+Så skillnaden är att en Iterator är en samling objekt som har ett "current objekt" och man kan kolla fall den
+har fler med .hasNext och gå vidare med .next. Något som är iterable är en samling element som kan skapa en
+Iterator med en funktion.
+
+U 25)
+Iterator<Person> iterator = coll.Iterator();
+while(itr.hasnext()){
+	System.out.println(iterator.next);
+}
+
+b)
+Detta kunde jag inte men det är en sådan for loop som oskar alltid använder och de ser ut så här
+for(Person p : coll){
+	System.out.println(p);
+}
+Så detta översätts ungefär till för varje Person p i coll{Gör detta}
+
+
+U 26) 
+Gjort se ArrayCollection.java
+
+U 27) Problemet med detta skulle vara att det bara kan finnas en position i samlingen, så man hade som exempel
+inte kunnat ha två iterators igång samtidigt för att jämföra två olika objekt.

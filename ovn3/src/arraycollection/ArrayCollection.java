@@ -2,6 +2,7 @@ package arraycollection;
 
 import java.util.Collection;
 import java.util.Iterator;
+import java.util.NoSuchElementException;
 
 public class ArrayCollection<E> implements Collection<E> {
 	private E[] theCollection;
@@ -57,8 +58,36 @@ public class ArrayCollection<E> implements Collection<E> {
 	}
 
 	public Iterator<E> iterator() {
-		// Fyll i egen kod
-		return null;
+
+		return new ArrayIterator();
+	}
+
+	private class ArrayIterator implements Iterator<E>{
+		private int pos;
+
+		private ArrayIterator() {
+			pos = 0;
+		}
+
+		@Override
+		public boolean hasNext() {
+			//fall positionen är mindre än size så finns det en nästa.
+			return pos<size;
+		}
+
+		@Override
+		public E next() {
+			
+			if(hasNext()){
+				E item = theCollection[pos];
+				pos++;
+				return item;
+			}
+			else{
+				throw new NoSuchElementException();
+			}
+		}
+
 	}
 
 	public int size() {
